@@ -1,4 +1,4 @@
-ccc# Function from https://gist.github.com/lalibi/3762289efc5805f8cfcf (Hide Powershell Window)
+# Function from https://gist.github.com/lalibi/3762289efc5805f8cfcf (Hide Powershell Window)
 function Set-WindowState {
     <#
     .LINK
