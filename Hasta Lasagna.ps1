@@ -119,6 +119,3 @@ Remove-MpPreference -ExclusionPath $dir
 
 # Remove the script from the system
 Clear-History
-
-# Reboot the system
-Restart-Computer -Force
